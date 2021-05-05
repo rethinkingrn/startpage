@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <form id="form" role="search">
+    <input type="search" id="query" name="q" placeholder="Search" />
+  </form>
+  <script>
+    const f = document.getElementById("form");
+    const q = document.getElementById("query");
+    const search = "https://duckduckgo.com/?t=ffab&q=";
+
+    function submitted(event) {
+      event.preventDefault();
+      const url = search + q.value + "&ia=web";
+      window.open(url, "_self");
+    }
+
+    f.addEventListener("submit", submitted);
+  </script>
+  <div id="links">
+    <nav>
+      <ul>
+        <h2>Social</h2>
+        <li><a href="https://reddit.com/">Reddit</a></li>
+        <li><a href="https://youtube.com/">Youtube</a></li>
+        <li><a href="https://mail.protonmail.com/inbox">ProtonMail</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <ul>
+        <h2>Tech</h2>
+        <li><a href="https://github.com/">Github</a></li>
+        <li><a href="https://gentoo.org">Gentoo</a></li>
+        <li><a href="https://wiki.archlinux.org/">Arch Wiki</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <ul>
+        <h2>Subreddits</h2>
+        <li><a href="https://reddit.com/r/unixporn/">r/unixporn</a></li>
+        <li><a href="https://reddit.com/r/gentoo/">r/gentoo</a></li>
+        <li><a href="https://reddit.com/r/linux/">r/linux</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <ul>
+        <h2>School</h2>
+        <li><a href="https://www.office.com">Office 365</a></li>
+        <li><a href="https://teams.microsoft.com/">Teams</a></li>
+        <li><a href="https://myeducation.gov.bc.ca/">MyEd</a></li>
+      </ul>
+    </nav>
+  </div>
+</body>
+
+</html>
