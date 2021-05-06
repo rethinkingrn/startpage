@@ -1,9 +1,16 @@
 html {
-    color: #d5d5d5;
+    color: #eceff4;
     font: 19px "GohuFont Nerd Font Mono";
     height: 100%;
 }
 
+h2 {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    border-bottom-color: #4c566a;
+}
 body {
     background-color: #2e3440;
 		padding: 18.9%;
@@ -28,7 +35,6 @@ ul, nav {
 
 div {
     text-align: center;
-    padding-right: 75px;
 }
 
 .center {
@@ -38,11 +44,12 @@ div {
 }
 
 input {
-    background-color: unset;
+    background-color: #3b4252;
     font: 16px "GohuFont Nerd Font Mono";
-    color: #d5d5d5;
+    color: #eceff4;
     height: 100%;
     width: 100%;
+    border-radius: 25px;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
