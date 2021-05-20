@@ -1,62 +1,13 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>~/</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-
-<body>
-  <form id="form" role="search">
-    <input type="search" id="query" name="q" placeholder="Search" />
-  </form>
-  <script>
-    const f = document.getElementById("form");
-    const q = document.getElementById("query");
-    const search = "https://duckduckgo.com/?t=ffab&q=";
-
-    function submitted(event) {
-      event.preventDefault();
-      const url = search + q.value + "&ia=web";
-      window.open(url, "_self");
-    }
-
-    f.addEventListener("submit", submitted);
-  </script>
-  <div id="links">
-    <nav>
-      <ul>
-        <h2 style="color:#4285F4">social</h2>
-          <li style="color:#4285F4"><a href="https://libredd.it">libreddit</a></li>
-        <li style="color:#4285F4"><a href="https://youtube.com/">youtube</a></li>
-        <li style="color:#4285F4"><a href="https://twitch.tv/">twitch</a></li>
-      </ul>
-    </nav>
-    <nav>
-      <ul>
-        <h2 style="color:#EA4335">tech</h2>
-        <li style="color:#EA4335"><a href="https://github.com/">github</a></li>
-        <li style="color:#EA4335"><a href="https://gentoo.org">gentoo</a></li>
-        <li style="color:#EA4335"><a href="https://wiki.archlinux.org/">arch wiki</a></li>
-      </ul>
-    </nav>
-    <nav>
-      <ul>
-        <h2 style="color:#FBBC05">subreddits</h2>
-        <li style="color:#FBBC05"><a href="https://libredd.it/r/unixporn/">r/unixporn</a></li>
-        <li style="color:#FBBC05"><a href="https://libredd.it/r/gentoo/">r/gentoo</a></li>
-        <li style="color:#FBBC05"><a href="https://libredd.it/r/linux/">r/linux</a></li>
-      </ul>
-    </nav>
-    <nav>
-      <ul>
-        <h2 style="color:#34A853">school</h2>
-        <li style="color:#34A853"><a href="https://www.office.com">office 365</a></li>
-        <li style="color:#34A853"><a href="https://teams.microsoft.com/">teams</a></li>
-        <li style="color:#34A853"><a href="https://myeducation.gov.bc.ca/">myed</a></li>
-      </ul>
-    </nav>
-  </div>
-</body>
-
+  <body>
+    <h1>Will make this look better soon</h1>
+    <h2>Collection of startpages (direct links to them)</h2>
+    <ul>
+      <li><a href='https://rethinkingrn.github.io/startpage/1/'>startpage #1</a></li>
+      <li><a href='https://rethinkingrn.github.io/startpage/2/'>startpage #2</a></li>
+      <li><a href='https://rethinkingrn.github.io/startpage/3/'> startpage #3</a></li>
+    </ul>
+  </body>
 </html>
+
